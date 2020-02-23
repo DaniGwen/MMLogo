@@ -1,0 +1,11 @@
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.exe
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.deps.json
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.runtimeconfig.json
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.runtimeconfig.dev.json
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.dll
+C:\Users\danig\source\repos\MMLogo\MMLogo\bin\Debug\netcoreapp3.1\MMLogo.pdb
+C:\Users\danig\source\repos\MMLogo\MMLogo\obj\Debug\netcoreapp3.1\MMLogo.csprojAssemblyReference.cache
+C:\Users\danig\source\repos\MMLogo\MMLogo\obj\Debug\netcoreapp3.1\MMLogo.AssemblyInfoInputs.cache
+C:\Users\danig\source\repos\MMLogo\MMLogo\obj\Debug\netcoreapp3.1\MMLogo.AssemblyInfo.cs
+C:\Users\danig\source\repos\MMLogo\MMLogo\obj\Debug\netcoreapp3.1\MMLogo.dll
+C:\Users\danig\source\repos\MMLogo\MMLogo\obj\Debug\netcoreapp3.1\MMLogo.pdb
