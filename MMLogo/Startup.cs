@@ -1,13 +1,14 @@
-﻿using System;
-using System.Text;
-
-namespace MMLogo
+﻿namespace MMLogo
 {
-    class Program
+    using System;
+    using System.Text;
+
+    class Startup
     {
-        // Global variable
-        public const char dash = '-';
-        public const char star = '*';
+        // Global variables
+        public const char Dash = '-';
+        public const char Star = '*';
+
         static void Main(string[] args)
         {
             // Input
@@ -63,17 +64,17 @@ namespace MMLogo
             var sb = new StringBuilder();
 
             //Left side 'M'
-            sb.Append(dash, dashCount)
-                     .Append(star, starCount)
-                     .Append(dash, middleDashes)
-                     .Append(star, starCount)
-                     .Append(dash, dashCount)
+            sb.Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      // Right side 'M'
-                     .Append(dash, dashCount)
-                     .Append(star, starCount)
-                     .Append(dash, middleDashes)
-                     .Append(star, starCount)
-                     .Append(dash, dashCount)
+                     .Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      .AppendLine();
 
             return sb.ToString();
@@ -87,21 +88,21 @@ namespace MMLogo
             var sb = new StringBuilder();
 
             // Left side 'M'
-            sb.Append(new string(dash, dashCount))
-                     .Append(star, starCount)
-                     .Append(dash, middleDashes)
-                     .Append(star, middleStars)
-                     .Append(dash, middleDashes)
-                     .Append(star, starCount)
-                     .Append(dash, dashCount)
+            sb.Append(new string(Dash, dashCount))
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, middleStars)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      // Right side 'M'
-                     .Append(dash, dashCount)
-                     .Append(star, starCount)
-                     .Append(dash, middleDashes)
-                     .Append(star, middleStars)
-                     .Append(dash, middleDashes)
-                     .Append(star, starCount)
-                     .Append(dash, dashCount)
+                     .Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, middleStars)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      .AppendLine();
 
             return sb.ToString();
