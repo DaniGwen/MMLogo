@@ -25,7 +25,8 @@ namespace MMLogo
             }
             catch (Exception e)
             {
-                throw new ArgumentException(message: e.Message);
+                Console.WriteLine(e.Message);
+                return;
             }
            
 
