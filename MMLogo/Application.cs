@@ -15,9 +15,9 @@ namespace MMLogo
                 Console.Write("Enter odd number: ");
                 n = int.Parse(Console.ReadLine());
 
-                if (n % 2 == 0)
+                if (n % 2 == 0 && n < 3)
                 {
-                    Console.WriteLine("Please Enter Odd number.");
+                    Console.WriteLine("Please Enter Odd number greater than 3.");
                     return;
                 }
 
