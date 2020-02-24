@@ -53,7 +53,7 @@ namespace MMLogo
                 }
             };
 
-            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
