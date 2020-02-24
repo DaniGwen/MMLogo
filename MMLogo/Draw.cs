@@ -8,63 +8,51 @@
         public const char Dash = '-';
         public const char Star = '*';
 
-        private readonly int starCount;
-        private readonly int dashCount;
-        private readonly int middleDashes;
-        private readonly int middleStars;
-
-        public Draw(int starCount,
-            int dashCount,
-            int middleDashes,
-            int middleStars)
+        public Draw()
         {
-            this.starCount = starCount;
-            this.dashCount = dashCount;
-            this.middleDashes = middleDashes;
-            this.middleStars = middleStars;
         }
 
-        public string TopHalf()
+        public string TopHalf(int starCount, int dashCount, int middleDashes)
         {
             var sb = new StringBuilder();
 
             //Left side 'M'
-            sb.Append(Dash, this.dashCount)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.dashCount)
+            sb.Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      // Right side 'M'
-                     .Append(Dash, this.dashCount)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.dashCount)
+                     .Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      .AppendLine();
 
             return sb.ToString();
         }
 
-        public string BottomHalf()
+        public string BottomHalf(int starCount, int dashCount, int middleDashes, int middleStars)
         {
             var sb = new StringBuilder();
 
             // Left side 'M'
-            sb.Append(Dash, this.dashCount)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.middleStars)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.dashCount)
+            sb.Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, middleStars)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      // Right side 'M'
-                     .Append(Dash, this.dashCount)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.middleStars)
-                     .Append(Dash, this.middleDashes)
-                     .Append(Star, this.starCount)
-                     .Append(Dash, this.dashCount)
+                     .Append(Dash, dashCount)
+                     .Append(Star, starCount)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, middleStars)
+                     .Append(Dash, middleDashes)
+                     .Append(Star, starCount)
+                     .Append(Dash, dashCount)
                      .AppendLine();
 
             return sb.ToString();

@@ -8,21 +8,40 @@ namespace MMLogo
         public static void Run()
         {
             // Input
-            Console.Write("Enter odd number: ");
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine();
+            int n = 0;
 
-            double topHalf = Math.Ceiling((double)n / 2);
-            double bottomHalf = (n + 1) - topHalf;
+            try
+            {
+                Console.Write("Enter odd number: ");
+                n = int.Parse(Console.ReadLine());
+
+                if (n % 2 == 0)
+                {
+                    Console.WriteLine("Please Enter Odd number.");
+                    return;
+                }
+
+                Console.WriteLine();
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException(message: e.Message);
+            }
+           
+
+            var draw = new Draw();
+
+            double topHalfLength = HelperClass.TopHalfLength(n);
+            double bottomHalfLength = HelperClass.BottomHalfLength(n, topHalfLength);
             int dashCount = n;
             int starCount = n;
             int middleDashes = n;
             int middleStars = 0;
 
             // Draw  First Half
-            for (int col = 1; col <= topHalf; col++)
+            for (int col = 1; col <= topHalfLength; col++)
             {
-                Console.Write(new Draw(starCount, dashCount, middleDashes, middleStars).TopHalf());
+                Console.Write(draw.TopHalf(starCount, dashCount, middleDashes));
 
                 starCount += 2;
                 dashCount -= 1;
@@ -39,9 +58,10 @@ namespace MMLogo
             starCount = n;
 
             // Draw bottom half
-            for (int col = 1; col <= bottomHalf; col++)
+            for (int col = 1; col <= bottomHalfLength; col++)
             {
-                Console.Write(new Draw(starCount, dashCount, middleDashes, middleStars).BottomHalf());
+
+                Console.Write(draw.BottomHalf(starCount, dashCount, middleDashes, middleStars));
 
                 dashCount -= 1;
                 middleStars -= 2;
